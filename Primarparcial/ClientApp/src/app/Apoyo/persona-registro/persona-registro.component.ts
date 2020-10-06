@@ -16,8 +16,8 @@ export class PersonaRegistroComponent implements OnInit {
     this.persona=new Persona;
   }
   add(){
-    alert("Se Agrego una nueva persona con identificacion: "+ JSON.stringify(this.persona.identificacion));
-    this.personaService.post(this.persona);
+    alert(this.personaService.post(this.persona));
+    
   }
 
 
